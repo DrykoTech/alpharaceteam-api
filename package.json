@@ -1,0 +1,42 @@
+{
+  "name": "alpharaceteam-api",
+  "version": "1.0.0",
+  "description": "API para site administrativo da Alpha Race Team",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "worker:start": "node src/workers/emailWorker.js start",
+    "worker:stats": "node src/workers/emailWorker.js stats",
+    "worker:cleanup": "node src/workers/emailWorker.js cleanup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdryelKlever/alpharaceteam-api.git"
+  },
+  "keywords": [],
+  "author": "Dryko Tech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdryelKlever/alpharaceteam-api/issues"
+  },
+  "homepage": "https://github.com/AdryelKlever/alpharaceteam-api#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.7.0",
+    "compression": "^1.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.1",
+    "morgan": "^1.10.0",
+    "multer": "^2.0.2",
+    "resend": "^4.6.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3"
+  }
+}
